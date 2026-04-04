@@ -1,5 +1,5 @@
 # Framework base de Agentes
-crewai
+crewai[google-genai]
 crewai-tools
 
 # Modelos y LLMs
@@ -11,3 +11,6 @@ pydantic
 
 # Manejo de variables de entorno
 python-dotenv
+
+#formato
+rich
