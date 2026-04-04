@@ -1,0 +1,13 @@
+# Framework base de Agentes
+crewai
+crewai-tools
+
+# Modelos y LLMs
+google-generativeai
+
+# Manipulación y estructuración de datos
+pandas
+pydantic
+
+# Manejo de variables de entorno
+python-dotenv
