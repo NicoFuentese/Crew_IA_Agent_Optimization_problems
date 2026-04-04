@@ -32,14 +32,19 @@ optimizacion-agentes-ia/
 
 ## Requisitos prevos
 - Python 3.10 o superior
+- uv (si decides ambientar con el)
 - API KEY valida de Google AI Studio (Gemini)
 
 ## Configuración
 Sigue estos pasos para levantar el proyecto localmente utilizando un entorno virtual tradicional (venv).
 
 ### 1. Crear y activar el entorno virtual:
-```PowerShell
+Tienes 3 formas de crear el entorno virtual, con venv o uv.
 
+#### 1.1 Ambiente virtual con python-venv
+
+#### *Creamos ambiente virtual*
+```PowerShell
 #Windows
 python -m venv .venv
 .venv\Scripts\activate
@@ -49,12 +54,39 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 2. Instalar dependencias
+#### *Instalar dependencias*
 ```PowerShell
 pip install -r requirements.txt
 ```
 
-### 3. Configurar variables de entorno
+#### 1.2 Ambiente virtual con uv
+Es mucho mas rapido que el python-venv tradicional. No es necesario activacion manual, al correr el proyecto se activa solo.
+
+#### *Creamos ambiente virtual venv*
+```PowerShell
+uv venv
+```
+
+### *Activamos el .venv*
+```PowerShell
+.venv\Scripts\activate
+
+#Mac/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+#### *Instalacion de dependencias*
+```PowerShell
+uv pip install -r requirements.txt
+```
+
+#### 1.3 Proyecto uv
+```PowerShell
+uv sync
+```
+
+### 2. Configurar variables de entorno
 ```PowerShell
 GOOGLE_API_KEY=tu_api_key_aqui
 ```
@@ -62,8 +94,14 @@ GOOGLE_API_KEY=tu_api_key_aqui
 ## Uso
 Para iniciar el flujo autónomo de los agentes y procesar una instancia de optimización, ejecuta el módulo principal desde la raíz del proyecto:
 
+## *Si usaste venv*
 ```PowerShell
 python -m src.main
+```
+
+## *Si usaste proyecto uv y .venv con uv*
+```PowerShell
+uv run python -m src.main
 ```
 
 ## Resultados de la Crew
