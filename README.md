@@ -58,11 +58,11 @@ graph TD
     QA3 -->|Ejecucion Exitosa| Ag6[Release Engineer - Integrador]
     Ag6 -->|Objeto JSON Estructurado| Out[Output: Teoria y Codigo Unificado]
 
-    %% Estilos simples para diferenciar roles
-    classDef agente fill:#e1f5fe,stroke:#0277bd,stroke-width:1px;
-    classDef qa fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
-    classDef input fill:#fff3e0,stroke:#ff9800,stroke-width:1px;
-    classDef output fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    %% Estilos TI Minimalistas (Outline Design)
+    classDef agente fill:transparent,stroke:#2b6cb0,stroke-width:2px;
+    classDef qa fill:transparent,stroke:#e53e3e,stroke-width:2px,stroke-dasharray: 4 4;
+    classDef input fill:transparent,stroke:#718096,stroke-width:2px;
+    classDef output fill:transparent,stroke:#38a169,stroke-width:2px;
 
     class Ag1,Ag2,Ag3,Ag4,Ag5,Ag6 agente;
     class QA1,QA2,QA3 qa;
