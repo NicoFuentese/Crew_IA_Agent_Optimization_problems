@@ -29,7 +29,7 @@ optimizacion-agentes-ia/
 ├── requirements.txt      # Dependencias del proyecto
 └── README.md             # Esta documentación
 ```
-## Arquitectura Crew
+## Arquitectura Secuencial de Crew con Supervisión de Tasks
 
 ```mermaid
 graph TD
